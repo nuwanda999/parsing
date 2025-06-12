@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вычисление объема</title>
+</head>
+<body>
+    <h2>Введите размеры фигуры</h2>
+    <form method="post">
+        Длина: <input type="text" name="length"><br><br>
+        Ширина: <input type="text" name="width"><br><br>
+        Высота: <input type="text" name="height"><br><br>
+        <input type="submit" value="Вычислить объем">
+    </form>
+
+    {% if volume is not none %}
+        <h3>Объем: {{ volume }}</h3>
+    {% endif %}
+</body>
+</html>
